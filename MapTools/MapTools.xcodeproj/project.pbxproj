@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6D203D7521135339007244FB /* MapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D203D7421135339007244FB /* MapEngine.m */; };
+		6D5063D8212716C000503260 /* GaodeMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5063D7212716C000503260 /* GaodeMapFactory.m */; };
+		6D5063DC2127170300503260 /* GaodeMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5063DB2127170300503260 /* GaodeMapView.m */; };
 		6D71749D21245864009FF959 /* Config.map.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6D71749C21245864009FF959 /* Config.map.xml */; };
 		6D7174A02124627B009FF959 /* Platfrom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D71749F2124627B009FF959 /* Platfrom.m */; };
 		6D7174A321246314009FF959 /* PlatformXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7174A221246314009FF959 /* PlatformXmlParser.m */; };
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		6D203D7321135339007244FB /* MapEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapEngine.h; sourceTree = "<group>"; };
 		6D203D7421135339007244FB /* MapEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapEngine.m; sourceTree = "<group>"; };
+		6D5063D6212716C000503260 /* GaodeMapFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaodeMapFactory.h; sourceTree = "<group>"; };
+		6D5063D7212716C000503260 /* GaodeMapFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaodeMapFactory.m; sourceTree = "<group>"; };
+		6D5063DA2127170300503260 /* GaodeMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaodeMapView.h; sourceTree = "<group>"; };
+		6D5063DB2127170300503260 /* GaodeMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaodeMapView.m; sourceTree = "<group>"; };
 		6D71749C21245864009FF959 /* Config.map.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Config.map.xml; sourceTree = "<group>"; };
 		6D71749E2124627B009FF959 /* Platfrom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platfrom.h; sourceTree = "<group>"; };
 		6D71749F2124627B009FF959 /* Platfrom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Platfrom.m; sourceTree = "<group>"; };
@@ -69,6 +75,25 @@
 				A5A876D01BC0CD79B0697C6A /* libPods-MapTools.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D5063D52127168900503260 /* Gaode */ = {
+			isa = PBXGroup;
+			children = (
+				6D5063D9212716CA00503260 /* View */,
+				6D5063D6212716C000503260 /* GaodeMapFactory.h */,
+				6D5063D7212716C000503260 /* GaodeMapFactory.m */,
+			);
+			path = Gaode;
+			sourceTree = "<group>";
+		};
+		6D5063D9212716CA00503260 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D5063DA2127170300503260 /* GaodeMapView.h */,
+				6D5063DB2127170300503260 /* GaodeMapView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6D717499212457C7009FF959 /* Config */ = {
@@ -148,6 +173,7 @@
 		6D7BCB84210F5E0D008F7DDF /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				6D5063D52127168900503260 /* Gaode */,
 				6D7BCB85210F5E1A008F7DDF /* Baidu */,
 				6D203D7321135339007244FB /* MapEngine.h */,
 				6D203D7421135339007244FB /* MapEngine.m */,
@@ -294,10 +320,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MapTools/Pods-MapTools-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,8 +344,10 @@
 				6D7174A321246314009FF959 /* PlatformXmlParser.m in Sources */,
 				6D7174A02124627B009FF959 /* Platfrom.m in Sources */,
 				6D7BCB8C210F5ECC008F7DDF /* BaiduMapView.m in Sources */,
+				6D5063DC2127170300503260 /* GaodeMapView.m in Sources */,
 				6D203D7521135339007244FB /* MapEngine.m in Sources */,
 				6D7BCB78210F5A3D008F7DDF /* main.m in Sources */,
+				6D5063D8212716C000503260 /* GaodeMapFactory.m in Sources */,
 				6D7BCB6A210F5A3D008F7DDF /* AppDelegate.m in Sources */,
 				6D7BCB88210F5E3F008F7DDF /* BaiduMapFactory.m in Sources */,
 			);
