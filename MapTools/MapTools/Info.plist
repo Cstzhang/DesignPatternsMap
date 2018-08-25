@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>允许永久使用定位GPS</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>允许永久使用定位GPS,前台使用定位</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>允许前台使用定位GPS</string>
 	<key>CFBundleDisplayName</key>
 	<string>FASFASJKFJASL</string>
 	<key>NSAppTransportSecurity</key>

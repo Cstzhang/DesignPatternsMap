@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6D203D7521135339007244FB /* MapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D203D7421135339007244FB /* MapEngine.m */; };
+		6D2CE957212EFEB700622027 /* BaiduMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CE956212EFEB700622027 /* BaiduMapLocationService.m */; };
+		6D2CE95A212F041800622027 /* BaiduMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CE959212F041800622027 /* BaiduMapUserLocation.m */; };
 		6D5063D8212716C000503260 /* GaodeMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5063D7212716C000503260 /* GaodeMapFactory.m */; };
 		6D5063DC2127170300503260 /* GaodeMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5063DB2127170300503260 /* GaodeMapView.m */; };
 		6D71749D21245864009FF959 /* Config.map.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6D71749C21245864009FF959 /* Config.map.xml */; };
@@ -27,6 +29,10 @@
 /* Begin PBXFileReference section */
 		6D203D7321135339007244FB /* MapEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapEngine.h; sourceTree = "<group>"; };
 		6D203D7421135339007244FB /* MapEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapEngine.m; sourceTree = "<group>"; };
+		6D2CE955212EFEB700622027 /* BaiduMapLocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduMapLocationService.h; sourceTree = "<group>"; };
+		6D2CE956212EFEB700622027 /* BaiduMapLocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMapLocationService.m; sourceTree = "<group>"; };
+		6D2CE958212F041800622027 /* BaiduMapUserLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduMapUserLocation.h; sourceTree = "<group>"; };
+		6D2CE959212F041800622027 /* BaiduMapUserLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduMapUserLocation.m; sourceTree = "<group>"; };
 		6D5063D6212716C000503260 /* GaodeMapFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaodeMapFactory.h; sourceTree = "<group>"; };
 		6D5063D7212716C000503260 /* GaodeMapFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaodeMapFactory.m; sourceTree = "<group>"; };
 		6D5063DA2127170300503260 /* GaodeMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaodeMapView.h; sourceTree = "<group>"; };
@@ -36,6 +42,9 @@
 		6D71749F2124627B009FF959 /* Platfrom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Platfrom.m; sourceTree = "<group>"; };
 		6D7174A121246314009FF959 /* PlatformXmlParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformXmlParser.h; sourceTree = "<group>"; };
 		6D7174A221246314009FF959 /* PlatformXmlParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformXmlParser.m; sourceTree = "<group>"; };
+		6D79559F212DAD2C003421F3 /* ILocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILocationService.h; sourceTree = "<group>"; };
+		6D7955A0212DB046003421F3 /* ILocationServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILocationServiceDelegate.h; sourceTree = "<group>"; };
+		6D7955A1212DB0D3003421F3 /* IUserLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IUserLocation.h; sourceTree = "<group>"; };
 		6D7BCB65210F5A3D008F7DDF /* MapTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7BCB68210F5A3D008F7DDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D7BCB69210F5A3D008F7DDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +86,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6D2CE954212EFE7800622027 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				6D2CE955212EFEB700622027 /* BaiduMapLocationService.h */,
+				6D2CE956212EFEB700622027 /* BaiduMapLocationService.m */,
+				6D2CE958212F041800622027 /* BaiduMapUserLocation.h */,
+				6D2CE959212F041800622027 /* BaiduMapUserLocation.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		6D5063D52127168900503260 /* Gaode */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +126,16 @@
 				6D7174A221246314009FF959 /* PlatformXmlParser.m */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		6D79559E212DAD05003421F3 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				6D79559F212DAD2C003421F3 /* ILocationService.h */,
+				6D7955A0212DB046003421F3 /* ILocationServiceDelegate.h */,
+				6D7955A1212DB0D3003421F3 /* IUserLocation.h */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 		6D7BCB5C210F5A3D008F7DDF = {
@@ -156,6 +186,7 @@
 		6D7BCB7F210F5ABE008F7DDF /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				6D79559E212DAD05003421F3 /* Location */,
 				6D7BCB81210F5B0C008F7DDF /* Views */,
 				6D7BCB82210F5B5D008F7DDF /* IMapFactory.h */,
 			);
@@ -184,6 +215,7 @@
 		6D7BCB85210F5E1A008F7DDF /* Baidu */ = {
 			isa = PBXGroup;
 			children = (
+				6D2CE954212EFE7800622027 /* Location */,
 				6D7BCB89210F5EB7008F7DDF /* Views */,
 				6D7BCB86210F5E3F008F7DDF /* BaiduMapFactory.h */,
 				6D7BCB87210F5E3F008F7DDF /* BaiduMapFactory.m */,
@@ -340,12 +372,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D2CE95A212F041800622027 /* BaiduMapUserLocation.m in Sources */,
 				6D7BCB6D210F5A3D008F7DDF /* ViewController.m in Sources */,
 				6D7174A321246314009FF959 /* PlatformXmlParser.m in Sources */,
 				6D7174A02124627B009FF959 /* Platfrom.m in Sources */,
 				6D7BCB8C210F5ECC008F7DDF /* BaiduMapView.m in Sources */,
 				6D5063DC2127170300503260 /* GaodeMapView.m in Sources */,
 				6D203D7521135339007244FB /* MapEngine.m in Sources */,
+				6D2CE957212EFEB700622027 /* BaiduMapLocationService.m in Sources */,
 				6D7BCB78210F5A3D008F7DDF /* main.m in Sources */,
 				6D5063D8212716C000503260 /* GaodeMapFactory.m in Sources */,
 				6D7BCB6A210F5A3D008F7DDF /* AppDelegate.m in Sources */,

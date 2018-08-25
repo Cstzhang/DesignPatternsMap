@@ -51,7 +51,8 @@ static MapEngine *instance = nil;
         //循环遍历要创建的工厂
         for (Platfrom *platform in _array) {
             if ([platform.isOpen isEqualToString:@"YES"] ) {
-                return [[NSClassFromString(platform.factoryName) alloc] initWithAppKey:platform.appkey];
+                id<IMapFactory> factory = [[NSClassFromString(platform.factoryName) alloc] initWithAppKey:platform.appkey];
+                return factory;
             }
         }
     }@catch(NSException *exception){

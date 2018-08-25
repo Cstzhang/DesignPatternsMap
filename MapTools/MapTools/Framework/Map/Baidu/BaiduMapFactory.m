@@ -10,7 +10,7 @@
 #import "BaiduMapView.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
-
+#import "BaiduMapLocationService.h"
 @interface BaiduMapFactory()
 /** 百度地图模拟器 */
 @property (nonatomic,strong) BMKMapManager * mapManager;
@@ -33,4 +33,9 @@
     return [[BaiduMapView alloc]initWithFrame:frame];
 }
 
+
+// 定位 (定位SDK生产线)
+-(id<ILocationService>)getMapLocationService{
+    return [[BaiduMapLocationService alloc]init];
+}
 @end
