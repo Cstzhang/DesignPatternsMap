@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--如何定义-->
 <map>
-    <platform id="1" appKey="o2fjLhckHNXTgFRSDci7rVGy6PZjnR7H" factoryName="BaiduMapFactory" isOpen="YES"/>
-    <platform id="2" appKey="0a1f07892081ec922987e4a06261d83b" factoryName="GaodeMapFactory" isOpen="NO"/>
+    <platform id="1" appKey="o2fjLhckHNXTgFRSDci7rVGy6PZjnR7H" factoryName="BaiduMapFactory" isOpen="NO"/>
+    <platform id="2" appKey="0a1f07892081ec922987e4a06261d83b" factoryName="GaodeMapFactory" isOpen="YES"/>
 
 
 </map>

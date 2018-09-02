@@ -19,4 +19,5 @@
  *@param error 错误号
  */
 - (void)didFailToLocateUserWithError:(NSError *)error;
+
 @end

@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0B686A21319F2F007C4160 /* GaodeMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B686921319F2F007C4160 /* GaodeMapLocationService.m */; };
 		6D203D7521135339007244FB /* MapEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D203D7421135339007244FB /* MapEngine.m */; };
 		6D2CE957212EFEB700622027 /* BaiduMapLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CE956212EFEB700622027 /* BaiduMapLocationService.m */; };
 		6D2CE95A212F041800622027 /* BaiduMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2CE959212F041800622027 /* BaiduMapUserLocation.m */; };
 		6D5063D8212716C000503260 /* GaodeMapFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5063D7212716C000503260 /* GaodeMapFactory.m */; };
 		6D5063DC2127170300503260 /* GaodeMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5063DB2127170300503260 /* GaodeMapView.m */; };
+		6D6C689B21324E210047A91E /* GaodeMapLocationServiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C689A21324E210047A91E /* GaodeMapLocationServiceDelegate.m */; };
+		6D6C689E2132549F0047A91E /* GaodeMapUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6C689D2132549F0047A91E /* GaodeMapUserLocation.m */; };
 		6D71749D21245864009FF959 /* Config.map.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6D71749C21245864009FF959 /* Config.map.xml */; };
 		6D7174A02124627B009FF959 /* Platfrom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D71749F2124627B009FF959 /* Platfrom.m */; };
 		6D7174A321246314009FF959 /* PlatformXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7174A221246314009FF959 /* PlatformXmlParser.m */; };
@@ -27,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D0B686821319F2F007C4160 /* GaodeMapLocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaodeMapLocationService.h; sourceTree = "<group>"; };
+		6D0B686921319F2F007C4160 /* GaodeMapLocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaodeMapLocationService.m; sourceTree = "<group>"; };
 		6D203D7321135339007244FB /* MapEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapEngine.h; sourceTree = "<group>"; };
 		6D203D7421135339007244FB /* MapEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapEngine.m; sourceTree = "<group>"; };
 		6D2CE955212EFEB700622027 /* BaiduMapLocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduMapLocationService.h; sourceTree = "<group>"; };
@@ -37,6 +42,10 @@
 		6D5063D7212716C000503260 /* GaodeMapFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaodeMapFactory.m; sourceTree = "<group>"; };
 		6D5063DA2127170300503260 /* GaodeMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaodeMapView.h; sourceTree = "<group>"; };
 		6D5063DB2127170300503260 /* GaodeMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaodeMapView.m; sourceTree = "<group>"; };
+		6D6C689921324E210047A91E /* GaodeMapLocationServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaodeMapLocationServiceDelegate.h; sourceTree = "<group>"; };
+		6D6C689A21324E210047A91E /* GaodeMapLocationServiceDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaodeMapLocationServiceDelegate.m; sourceTree = "<group>"; };
+		6D6C689C2132549F0047A91E /* GaodeMapUserLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GaodeMapUserLocation.h; sourceTree = "<group>"; };
+		6D6C689D2132549F0047A91E /* GaodeMapUserLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaodeMapUserLocation.m; sourceTree = "<group>"; };
 		6D71749C21245864009FF959 /* Config.map.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Config.map.xml; sourceTree = "<group>"; };
 		6D71749E2124627B009FF959 /* Platfrom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platfrom.h; sourceTree = "<group>"; };
 		6D71749F2124627B009FF959 /* Platfrom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Platfrom.m; sourceTree = "<group>"; };
@@ -86,6 +95,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6D0B686721319E00007C4160 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				6D0B686821319F2F007C4160 /* GaodeMapLocationService.h */,
+				6D0B686921319F2F007C4160 /* GaodeMapLocationService.m */,
+				6D6C689921324E210047A91E /* GaodeMapLocationServiceDelegate.h */,
+				6D6C689A21324E210047A91E /* GaodeMapLocationServiceDelegate.m */,
+				6D6C689C2132549F0047A91E /* GaodeMapUserLocation.h */,
+				6D6C689D2132549F0047A91E /* GaodeMapUserLocation.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		6D2CE954212EFE7800622027 /* Location */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +122,7 @@
 		6D5063D52127168900503260 /* Gaode */ = {
 			isa = PBXGroup;
 			children = (
+				6D0B686721319E00007C4160 /* Location */,
 				6D5063D9212716CA00503260 /* View */,
 				6D5063D6212716C000503260 /* GaodeMapFactory.h */,
 				6D5063D7212716C000503260 /* GaodeMapFactory.m */,
@@ -381,8 +404,11 @@
 				6D203D7521135339007244FB /* MapEngine.m in Sources */,
 				6D2CE957212EFEB700622027 /* BaiduMapLocationService.m in Sources */,
 				6D7BCB78210F5A3D008F7DDF /* main.m in Sources */,
+				6D0B686A21319F2F007C4160 /* GaodeMapLocationService.m in Sources */,
 				6D5063D8212716C000503260 /* GaodeMapFactory.m in Sources */,
+				6D6C689B21324E210047A91E /* GaodeMapLocationServiceDelegate.m in Sources */,
 				6D7BCB6A210F5A3D008F7DDF /* AppDelegate.m in Sources */,
+				6D6C689E2132549F0047A91E /* GaodeMapUserLocation.m in Sources */,
 				6D7BCB88210F5E3F008F7DDF /* BaiduMapFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

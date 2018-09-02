@@ -9,7 +9,7 @@
 #import "GaodeMapFactory.h"
 #import "GaodeMapView.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
-
+#import "GaodeMapLocationService.h"
 @interface GaodeMapFactory()
 
 
@@ -30,5 +30,11 @@
 - (id<IMapView>)getMapViewWithFrame:(CGRect)frame{
     return [[GaodeMapView alloc]initWithFrame:frame];
 }
+
+// 定位 (定位SDK生产线)
+-(id<ILocationService>)getMapLocationService{
+    return [[GaodeMapLocationService alloc]init];
+}
+
 
 @end
